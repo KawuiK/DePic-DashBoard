@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const { mongodb } = require("./config/config")
 const con = mongodb
 const db = mongoose.connection;
+
 mongoose
   .connect(con, {
     useNewUrlParser: true,
