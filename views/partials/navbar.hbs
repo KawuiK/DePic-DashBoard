@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">
+    <img src="https://cdn.discordapp.com/attachments/660237048749228060/784922254298578984/DePicLetras.png" width="30"
+      height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    DePic
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+          href="https://discord.com/oauth2/authorize?client_id=763582048995639296&permissions=8&scope=bot">Invitar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FAQ">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{#if user}}dash{{ else }} login {{/if}}">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tienda">Tienda <span class="badge bg-warning">Best</span></a>
+      </li>
+      <div class="dropdown">
+        <button class="btn nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Otros y Reglas
+        </button>
+        <div class="dropdown-menu dropsDownBlack dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <a class="dropdown-item btn dropsDownBlack" href="Reglas">Reglas Generales</a>
+          <a class="dropdown-item btn dropsDownBlack" href="rgl3">Users Bands</a>
+        </div>
+      </div>
+      </li>
+      </li>
+    </ul>
+    <span class="">
+      {{#if user}}
+      <div class="dropdown dropleft">
+        <button class="btn nav-link dropdown-toggle btn-outline-light" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar-navbar"
+            src="https://cdn.discordapp.com/avatars/{{user.id}}/{{user.avatar}}.webp" width="30" height="30"
+            alt="">{{user.username}} </button>
+        </button>
+        <div class="dropdown-menu dropsDownBlack dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <a class="dropdown-item btn dropsDownBlack" href="dash">Dashboard</a>
+          <a class="dropdown-item btn dropsDownBlack" href="login">Cambiar cuenta</a>
+        </div>
+      </div>
+      {{ else }}
+      <a href="login" class="nav-item"><button type="button" class="btn btn-outline-light">Login</button></a>
+      {{/if}}
+    </span>
+  </div>
+</nav>

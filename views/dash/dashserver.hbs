@@ -1,0 +1,77 @@
+<h1 class="serverNav text-center display-3"><img class="img233"
+        src="https://cdn.discordapp.com/icons/{{servidor.id}}/{{servidor.icon}}.png" alt="" width="80" height="80">
+    {{servidor.name}}</h1>
+<h1 class="text-center ">
+    <a href="#" class="text-center btn btn-success my-5" id="liveToastBtn"> Guardar cambios</a>
+
+</h1>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"> <img class="img23"
+                        src="https://cdn.discordapp.com/icons/{{servidor.id}}/{{servidor.icon}}.png" alt="" width="60"
+                        height="60">Prefix</h5>
+                <p class="card-text">Prefix actual: {{prefixMostrar}} </p>
+                <form class="card-text" action="/dash/{{servidor.id}}/prefix" method="post">
+                    <p>Introdusca la ID del canal</p>
+                    <input name="prefix" type="text" class="colorblack">
+                    <button class="btn btn-dark" type="submit">Cambiar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><img class="img23"
+                        src="https://cdn.discordapp.com/icons/{{servidor.id}}/{{servidor.icon}}.png" alt="" width="60"
+                        height="60">Confenciones</h5>
+                <p class="card-text">Canal de confenciones actual:</p>
+                <form class="card-text" action="" method="post">
+                    <p>Introdusca la ID del canal</p>
+                    <input type="text" class="colorblack">
+                    <button class="btn btn-dark" type="submit">Cambiar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><img class="img23"
+                        src="https://cdn.discordapp.com/icons/{{servidor.id}}/{{servidor.icon}}.png" alt="" width="60"
+                        height="60">Sugerencias</h5>
+                <p class="card-text">Canal de sugerencias actual:</p>
+                <form class="card-text" action="" method="post">
+                    <p>Introdusca la ID del canal</p>
+                    <input type="text" class="colorblack">
+                    <button class="btn btn-dark" type="submit">Cambiar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><img class="img23"
+                        src="https://cdn.discordapp.com/icons/{{servidor.id}}/{{servidor.icon}}.png" alt="" width="60"
+                        height="60">Logs</h5>
+                <p class="card-text">Canal de logs: En proceso de creacion</p>
+                <a href="#" class="btn btn-dark">PROXIMAMENTE</a>
+            </div>
+        </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">xd</strong>
+            <small>si ves esto es que funciona</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">si ves esto es que funciona
+        </div>
+    </div>
+</div>

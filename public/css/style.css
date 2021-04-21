@@ -1,0 +1,278 @@
+* {
+  list-style: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+html {
+  background-color: #1e1f26;
+  font-family: Oswald;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 500;
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+.re {
+  margin-right: 200px;
+}
+.DePic {
+  margin-right: 30px;
+  color: #52057b;
+}
+.div2 {
+  height: 0px;
+}
+.funci {
+  margin-top: 10px;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+  font-size: 30px;
+}
+.div3 h3 {
+  margin-top: 70px;
+}
+.div4 h3 {
+  margin-top: 70px;
+}
+.div5 h3 {
+  margin-top: 70px;
+}
+.Cdiv2 {
+  width: 90%;
+  margin: auto;
+  height: 1px;
+  padding: 1px 0;
+  align-items: center;
+}
+.CP {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+hr {
+  border: 0 none white;
+  border-top: 1px solid white;
+  height: 1px;
+  margin: 5px 0;
+  display: block;
+  clear: both;
+}
+.Cdiv2 h2 {
+  margin-bottom: 5px;
+}
+.Cdiv2 h1 {
+  margin-bottom: 5px;
+}
+.titulosC {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.Pdiv2 {
+  width: 90%;
+  margin: auto;
+  height: 60px;
+  padding: 20px 0;
+  align-items: center;
+}
+.Rdiv2 {
+  width: 90%;
+  margin: auto;
+  height: 60px;
+  padding: 20px 0;
+  align-items: center;
+}
+.Rdiv2 h2 {
+  margin-bottom: 20px;
+}
+.Rdiv2 a b {
+  color: #0080ff;
+}
+.IMG1 {
+  width: 40%;
+}
+.titulosC ul hr {
+  color: white;
+}
+
+/*cmd-cards*/
+.cmd-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2%;
+}
+.div-cards {
+  margin-bottom: 2%;
+}
+.div-cmd {
+  margin-top: 0px;
+}
+/*FaQ*/
+.FaQ-Font {
+  color: black;
+}
+.card {
+  margin-bottom: 2%;
+}
+.card-text {
+  margin-left: 6%;
+  margin-right: 10px;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+.NumRan {
+  font-size: 29px;
+}
+/*Ban users*/
+.BU {
+  margin-bottom: 2%;
+}
+.divr {
+  margin-bottom: 6%;
+}
+/*Reglas*/
+.TR {
+  margin-bottom: 2%;
+}
+.HTR {
+  margin-bottom: 3%;
+}
+.home {
+  font-size: 700%;
+  font-weight: 500;
+  margin-left: 34%;
+  margin-top: 2%;
+}
+.home span {
+  margin-left: 1%;
+}
+.colorblack {
+  color: black;
+}
+.infob {
+  margin-top: 3%;
+}
+.tinfob {
+  font-size: 200%;
+}
+.funci {
+  font-size: 250%;
+  margin-top: 4%;
+}
+.Imgpq {
+  margin-left: 20%;
+  width: 58%;
+}
+.sitio {
+  width: 10;
+}
+.img23 {
+  border-radius: 55px;
+  margin-right: 2%;
+}
+.serversxd {
+  padding-left: 100px;
+}
+.card {
+  background-color: #151515;
+  border-radius: 50px;
+  color: white;
+}
+.col-md-8 {
+  padding-right: 10%;
+}
+.card-title {
+  color: white;
+}
+.userAvatar {
+  border-radius: 100px;
+  width: 5%;
+}
+.userBienvenida {
+  margin-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.serverNav {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.botonGuardar {
+  text-align: center;
+}
+.img233 {
+  border-radius: 15%;
+}
+.divbody {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+.seperar {
+  padding-top: 4%;
+}
+.depicLogosxd {
+  border-radius: 100px;
+}
+
+.depicLogosxd1 {
+  border-radius: 10px;
+}
+.cardNoDash {
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.avatar-navbar {
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.dropsDownBlack {
+  background-color: #151515;
+  color: white;
+}
+.animate {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+}
+.depicFondo {
+  font-size: 8rem;
+  line-height: 1.25;
+  position: relative;
+}
+hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

@@ -1,0 +1,30 @@
+<h2 class="userBienvenida">Bienvenido: <img class="userAvatar"
+        src="https://cdn.discordapp.com/avatars/{{user.id}}/{{user.avatar}}.webp" alt="">
+    {{user.username}}</h2>
+<div class="serversxd">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-9">
+            {{#each servidores}}
+            <div class=" card  mb-3 " style=" max-width: 540px;">
+                <div class="row g-0 ">
+                    <div class="col-md-4 ">
+                        <img class="img23" src="https://cdn.discordapp.com/icons/{{this.id}}/{{this.icon}}.png"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title colorblack">{{this.name}}</h5>
+                            {{#if this.esta}}
+                            <a href="/dash/{{this.id}}" class="btn btn-success">Ir al panel</a>
+                            {{ else }}
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=778414869530673192&permissions=8&scope=bot"
+                                class="btn btn-dark">Invitar!</a>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
